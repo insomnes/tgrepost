@@ -1,0 +1,10 @@
+services:
+  tgrepost:
+    build:
+      context: ./..
+      dockerfile: docker/Dockerfile
+    environment:
+      REP_BOT_API_TOKEN: ${REP_BOT_API_TOKEN}
+      REP_BOT_CHANNEL_NAME: ${REP_BOT_CHANNEL_NAME}
+      REP_BOT_CHAT_ID: ${REP_BOT_CHAT_ID}
+      REP_BOT_THREAD_ID: ${REP_BOT_THREAD_ID}
